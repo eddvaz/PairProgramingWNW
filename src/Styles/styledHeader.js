@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Banner from "../img/banner.png"
 
 
 export const containerHeader = styled.section`
@@ -10,7 +11,7 @@ export const containerHeader = styled.section`
 export const first = styled.div`
   max-width: 100%;
   height: 100%;
-
+  background-image: url(${Banner});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px, 0px;
@@ -49,6 +50,13 @@ export const liHeader = styled.li`
   font-family: "DM Sans", sans-serif;
   font-size: 24px;
   color: #373737;
+  width: 40%;
+
+
+  &:hover{
+   cursor: pointer;
+   font-size: 1.3rem;
+  }
 `;
 
 export const h2ContainerHeader = styled.div`
