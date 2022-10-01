@@ -73,3 +73,4 @@ export const texth2Header = styled.h2`
   color: #373737;
   opacity: 1;
 `;
+

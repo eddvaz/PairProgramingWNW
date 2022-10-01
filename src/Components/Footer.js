@@ -23,7 +23,6 @@ const Footer = () => {
           </ul>
         </S.linkNav>
       </S.teste>
-
       <S.credidtsContent>
         <p>
           Layout produzido por Vai na Web para fins exclusivamente educacionais.

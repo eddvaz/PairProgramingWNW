@@ -14,6 +14,6 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #F2F4F1;
     display: flex;
     flex-direction: column;
-    min-width: 389px;
+    min-width: 398px;
   }
 `;
