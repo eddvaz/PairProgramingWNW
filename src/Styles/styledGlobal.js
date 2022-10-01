@@ -10,4 +10,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
   
+  main{
+    background-color: #F2F4F1;
+    display: flex;
+    flex-direction: column;
+    min-width: 389px;
+  }
 `;
