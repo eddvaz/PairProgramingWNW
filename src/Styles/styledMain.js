@@ -34,15 +34,28 @@ export const containerCards = styled.div`
     display: flex;
     justify-content:  space-evenly;
     width: 90vw;
+
+        @media(max-width: 720px){
+            flex-direction: column;
+        }
 `
 
 export const Card = styled.div`
-    
-
         img{
             width: 20vw;
             height: 25vh;
         }
+
+
+            @media(max-width: 720px){
+            flex-direction: column;
+                
+                img{
+                    width: 40vw;
+                    height: 20vh;
+                }
+            
+            }
 `
 
 export const H3Recipes = styled.div`
@@ -72,6 +85,15 @@ export const H3Recipes = styled.div`
             align-items: center;
             justify-content: center;
         }
+
+        @media(max-width: 720px){
+            margin-left: 25vw;
+            width: 40vw;
+
+                div{
+                    width: 10vw;
+                }
+        }
 `
 
 export const conatinerAbout = styled.div`
@@ -79,14 +101,25 @@ export const conatinerAbout = styled.div`
     text-align: center;
     margin-top: 294px;
 
+        @media(max-width: 720px){
+            flex-direction: column;
+        }
+
 `
 
 export const DivImgAbout = styled.div`
     background-image: url(${spoon});
+    background-repeat: no-repeat;
     background-position: center;
     width: auto;
     width: 50%;
     height: 957px;
+        
+        @media(max-width: 720px){
+            height: 700px;
+            width: 100%;
+            
+        }
     
 `
 
@@ -96,14 +129,35 @@ export const DivTextAbout = styled.div`
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 957px;
+    height: 100%;
+    margin-top: 10vh;
 
         p{
             width: 30vw;
             text-align: justify;
             font-size: 20px;
             line-height: 35px;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+
+            @media(max-width: 1080px) {
+                width: 35vw;
+                height: 50vh;
+            }
+        }
+
+        @media(max-width: 720px){
+            width: 100%;
+            height: 130vh;
+
+                p{
+                    width: 60vw;
+                }
+        }
+
+        @media(max-width: 500px){
+                P{
+                    width: 90vw;
+                }
         }
 
 `
@@ -122,7 +176,11 @@ export const DivAbout = styled.div`
             margin-top: 2vh;
             margin-left: 30px;
             border-radius: 10px;
-            margin-bottom: 20.5px; 
+            margin-bottom: 20.5px;
+
+                @media(max-width: 720px){
+                    width: 10vw;
+                }
         }
 
         h2{
